@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "b b b b"
+    "b b b b"
+    "c c d d"
+    "c c d d"
+    "e e e e"
+    "e e e e";
+
+}
+
+nav{
+    grid-area: a;
+    background-color: grey;
+}
+
+ul{
+    display: flex;
+    border: none;
+    text-align: left;
+    padding: 15px 32px;
+    font-size: 20px;
+    list-style-type: none;
+    font-size: larger;
+    text-decoration: none;
+    
+}
+
+ul a{ 
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+header{
+    grid-area: b;
+    background-image: url("../assets/torres-madrid.jpg") ;
+    
+}
+
+header p{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 500%;
+    color: white;
+    justify-content: center;
+}
+
+.seccion1{
+    grid-area: c;
+    background-color: black;
+    display: inline-block;
+    
+    
+
+}
+ .seccion1__articulo{
+    font-size: 15px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 30%;
+ }
+
+ .seccion2{
+    grid-area: d;
+    background-color: black;
+    display: inline-block;
+ }
+
+ footer{
+    grid-area: e;
+    background-color: grey;
+}
+
+.Pie_redes{
+    min-width: 700px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Pie_redes a {
+    display: inline;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 60px;
+    color: #f1f1f1;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+  }
+
+  .Pie_redes a:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
