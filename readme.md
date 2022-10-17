@@ -1,0 +1,1 @@
+estamos montando el index.html y las FAQs.html responsive las demas quedaran igual.
