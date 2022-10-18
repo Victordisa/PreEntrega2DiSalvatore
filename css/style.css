@@ -5,30 +5,31 @@
 }
 
     
-
-    
-
 .container{
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "a a a a"
     "b b b b"
-    "b b b b"
-    "b b b b"
     "c c d d"
-    "c c d d"
-    "e e e e"
     "e e e e";
 
 }
+.container__faqs{
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c"
+    "e e e";
+}
 
 
-.navegador__inicio{
+.navegador{
     grid-area: a;
     background: linear-gradient(to bottom, rgb(56, 47, 77), rgb(72, 68, 88));
 }
-
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -57,6 +58,7 @@ ul a{
     color: white;
     text-decoration: none;
     margin-left: 40px;
+    
 }
 
 .Encabezado__inicio{
@@ -64,11 +66,20 @@ ul a{
     background-image: url("../assets/torres-madrid.jpg") ;
     
 }
-.Encabezado__inico a{
-    margin-left: -20px;
+.Encabezado__inicio p{
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-size: 500%;
+    color: rgb(255, 255, 255);
+    justify-content: center;
 }
 
-.Encabezado__inicio p{
+.Encabezado__faqs{
+    grid-area: b;
+    background-image: url("../assets/torres-madrid.jpg") ;
+}
+.Encabezado__faqs p{
     display: flex;
     margin-top: 150px;
     margin-bottom: 150px;
@@ -81,22 +92,39 @@ ul a{
     grid-area: c;
     background: linear-gradient(to bottom, rgb(56, 47, 77), rgb(72, 68, 88));
     display: inline-block;
-    
-    
-
 }
- .seccion1__articulo{
+    
+.seccion1__articulo{
     font-size: 15px;
     color: white;
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 30%;
+    margin: 90px 160px;
+    padding-bottom: 100px;
  }
 
- .seccion2{
+.seccion2{
     grid-area: d;
     background: linear-gradient(to bottom, rgb(56, 47, 77), rgb(72, 68, 88));
     display: inline-block;
+ }
+
+ .seccion__faq{
+    grid-area: c;
+    background: linear-gradient(to bottom, rgb(56, 47, 77), rgb(72, 68, 88));
+    display: inline-block;
+ }
+
+ .Pregunta__faqs{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+ }
+
+ .Respuesta__faqs{
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin: 100px 350px;
  }
 
  footer{
@@ -108,7 +136,7 @@ ul a{
 .Pie_redes{
     min-width: 700px;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     
 }
 
@@ -130,35 +158,53 @@ ul a{
 
 @media (max-width: 520px ) {
     .container{
-    grid-template-columns: repeat(4 1fr);
-    grid-template-areas: 
-    "a a a a"; }
-
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "a a"
+        "c c"
+        "d d"
+        "e e"; 
+    }
+    .container__faqs{
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"
+        "e e"; 
+    }
     .checkbtn{ 
         display: block;
+
+
     }
 
+    .navegador{
+        height: 80px;
+    }
+    
 
-
-    ul{
-        position: fixed;
+    .navegador ul{
+        position: relative;
         flex-direction: column;
-        width: 100%;
-        height: 100vh;
+        width: 70%;
+        height: 60vh;
         background: grey;
-        top: 80px;
         left: -100%;
-        text-align: center;
+        text-align: left;
         transition: all .5s;
     }
 
-    .navegador__inicio ul li{
+
+    .navegador ul li{
         display: block;
         margin-top: 40px;
 
     }
 
-    .navegador__inicio ul li a{
+    .navegador ul li a{
         font-size: 20px;
     }
     #check:checked ~ ul{
@@ -167,17 +213,32 @@ ul a{
     .Encabezado__inicio{
         display: none;
     }
+    .Encabezado__faqs{
+        display: none;
+    }
+
+    .Respuesta__faqs{
+        color: white;
+        font-size: 15px;
+        margin: 15px 20px 30px 20px;
+        
+     }
 
     .seccion1{
-        display: none;
+        display: block;
+        background-color: blue;
+    }
+
+    .seccion1 .seccion1__articulo{
+        font-size: 15px;
+        margin: 15px 20px 0 20px;
 
     }
-    .seccion2{
-        display: none;
-    
+    iframe{
+        margin: 10px 20px 0 40px;
     }
-    footer{
-        display: none;
+    .Pie_inicio{
+        position: fixed;
     }
 }
 
