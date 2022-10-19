@@ -191,7 +191,34 @@ ul a{
     cursor: pointer;
 }
 
- footer{
+.seccion1__nosotros{
+    grid-area: c;
+}
+.seccion2__nosotros{
+    grid-area: d;
+    
+
+}
+.seccion1__nosotros p{
+   margin: 100px;
+
+}
+.seccion2__nosotros p{
+    margin: 100px 100px;
+    
+}
+
+.seccion__imagen{
+    margin-bottom: 150px;
+    margin-left: 250px;
+    
+}
+.seccion2__nosotros img{
+    margin: 70px 50px 0 50px;
+}
+
+
+footer{
     grid-area: e;
     background-color: rgb(5, 5, 5);
 
@@ -265,6 +292,7 @@ ul a{
     .navegador ul{
         position: relative;
         flex-direction: column;
+        border-radius: 7px;
         width: 70%;
         height: 60vh;
         background: grey;
