@@ -25,6 +25,17 @@
     "e e e";
 }
 
+.container__contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c"
+    "e e e";
+
+}
+
 
 .navegador{
     grid-area: a;
@@ -127,6 +138,59 @@ ul a{
     margin: 100px 350px;
  }
 
+.formulario{
+    grid-area: c;
+    height: 50%;
+    color: black;
+     background-color: rgb(233, 221, 221);
+     box-shadow: 0 5px 10px -5px rgb(124, 122, 122);
+     margin: 150px 10px;
+
+}
+.Nombre__ap input{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    
+}
+.email{
+    text-align: center;
+}
+.email input{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    outline: none;
+    cursor: pointer;
+}
+.edo__civil{
+    border-radius: 5px;
+    text-align: center;
+}
+.edo__civil select{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.noticias{
+    text-align: center;
+}
+.form{
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.form input{
+    cursor: pointer;
+}
+
  footer{
     grid-area: e;
     background-color: rgb(5, 5, 5);
@@ -175,6 +239,15 @@ ul a{
         "c c"
         "e e"; 
     }
+
+    .container__contact{
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "a a"
+        "c c"
+        "e e";
+    }
     .checkbtn{ 
         display: block;
 
@@ -183,6 +256,9 @@ ul a{
 
     .navegador{
         height: 80px;
+    }
+    .container__contact header{
+        display: none;
     }
     
 
@@ -234,9 +310,43 @@ ul a{
         margin: 15px 20px 0 20px;
 
     }
+    .formulario{
+        grid-area: c;
+        color: black;
+        text-align: center;
+        margin: 140px 50px 0 50px;
+        padding: 20px 25px 65px 25px;
+        background-color: rgb(233, 221, 221);
+         box-shadow: 0 5px 10px -5px rgb(124, 122, 122);
+         border-radius: 5px;
+    
+    }
+    .Nombre__ap input{
+        font-size: 13px;
+        margin: 10px 0;
+        background: none;
+        border:none;
+        border-bottom: 1px solid black;
+        outline: none;
+        cursor: pointer;
+        
+    }
+    .noticias input{
+        margin-top: 20px;
+    }
+
+    .form{
+        margin-top: 5px;
+    }
+    .form input{
+        font-size: 11px;
+    }
+
     iframe{
         margin: 10px 20px 0 40px;
     }
+
+
     .Pie_inicio{
         position: fixed;
     }
