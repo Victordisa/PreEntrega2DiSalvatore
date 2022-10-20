@@ -1,4 +1,2 @@
-estamos montando el index.html y las FAQs.html responsive las demas quedaran igual.
-tenemos que hacer responsive el nav de faqs. 
-Logramos hacer el responsive podrias agregar una imagen de fondo en el mobile de faqs y decorar con animista 
-las vistas desktop. 
+2da entrega de Desarrollo web CoderHouse, sitio web responsive mobil, tablet y desktop
+Index FAQs y Contactenos fueron hechas responsive para los 3 dispositivos
