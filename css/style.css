@@ -255,8 +255,22 @@ footer{
     transform: scale(1.2);
 }
 
+/*tablet--------------------------*/
 
-@media (max-width: 520px ) {
+@media (max-width: 768px) {
+    .seccion1__articulo{
+        font-size: 15px;
+        margin: 50px 40px;
+    }
+    .Respuesta__faqs{
+        font-size: 15px;
+        margin: 100px 50px;
+    }
+}
+
+
+/*mobile--------------------------*/
+@media (max-width: 576px ) {
     .container{
         overflow: hidden;
         grid-template-columns: repeat(2, 1fr);
@@ -389,16 +403,7 @@ footer{
     }
 }
 
-@media (max-width: 768px) {
-    .seccion1__articulo{
-        font-size: 15px;
-        margin: 50px 40px;
-    }
-    .Respuesta__faqs{
-        font-size: 15px;
-        margin: 100px 50px;
-    }
-}
+
 
 
 
