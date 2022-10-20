@@ -219,9 +219,11 @@ ul a{
     margin: 70px 50px 0 50px;
 }
 .seccion1_tablas{
-    margin-left: 40%;
-    margin-top: 20%;
+    margin: 100px auto;
 
+}
+.seccion2 img{
+    margin: 100px auto;
 }
 
 
@@ -384,6 +386,17 @@ footer{
 
     .Pie_inicio{
         position: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion1__articulo{
+        font-size: 15px;
+        margin: 50px 40px;
+    }
+    .Respuesta__faqs{
+        font-size: 15px;
+        margin: 100px 50px;
     }
 }
 
