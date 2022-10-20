@@ -99,6 +99,7 @@ ul a{
     justify-content: center;
 }
 
+
 .seccion1{
     grid-area: c;
     background: linear-gradient(to bottom, rgb(56, 47, 77), rgb(72, 68, 88));
@@ -144,7 +145,8 @@ ul a{
     color: black;
      background-color: rgb(233, 221, 221);
      box-shadow: 0 5px 10px -5px rgb(124, 122, 122);
-     margin: 150px 10px;
+     margin: 150px auto;
+     padding-right: 15px;
 
 }
 .Nombre__ap input{
@@ -215,6 +217,11 @@ ul a{
 }
 .seccion2__nosotros img{
     margin: 70px 50px 0 50px;
+}
+.seccion1_tablas{
+    margin-left: 40%;
+    margin-top: 20%;
+
 }
 
 
